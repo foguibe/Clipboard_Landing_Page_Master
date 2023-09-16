@@ -1,0 +1,500 @@
+/********************CSS RESET***************/
+/*
+1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/*
+2. Remove default margin
+*/
+* {
+margin: 0;
+}
+/*
+Typographic tweaks!
+3. Add accessible line-height
+4. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+/*
+5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+/*
+6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+    font: inherit;
+}
+/*
+7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+/*
+8. Create a root stacking context
+*/
+#root, #__next {
+    isolation: isolate;
+}
+
+/******************************MY STYLES**********************/
+body {
+    background-image: url("images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 100px 0 0 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+h1, h2 {
+    font-size: 26px;
+    color: hsl(210, 10%, 33%);
+}
+
+h2 {
+    font-size: 21px;
+}
+
+#sect1 h1 {
+    font-size: 32px;
+}
+
+#mid-sect1 {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+#sect1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    max-width: 550px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+#sect1 button {
+    border: 0;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+#sect1 button:hover {
+    cursor: pointer;
+}
+
+#button-div {
+    display: flex;
+    gap: 20px;
+}
+#ios-button {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 1px 1px 10px 1px hsl(171, 66%, 44%);
+}
+
+#mac-button {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 1px 1px 10px 1px hsl(233, 100%, 69%);
+}
+
+#button-div {
+    margin-top: 10px;
+}
+
+#sect2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+#sect2 #div1 {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-self: center;
+    align-self: center;
+}
+
+#sect2 #div1 p {
+    text-align: center;
+}
+
+#sect2 #div1 h1 {
+    text-align: center;
+}
+
+#sect2  #div2 {
+    display: flex;
+    width: 1150px;
+    gap: 50px;
+    margin-top: 40px;
+    margin-left: -500px;
+}
+
+.sect2-subdiv {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.sect2-subdiv h2 {
+    margin-bottom: 7px;
+}
+
+#sect3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#sect3 > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    width: 600px;
+    margin-bottom: 70px;
+}
+
+#sect4 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 1000px;
+}
+
+#sect4 h2 {
+    font-size: 18px;
+}
+
+#sect4 > * {
+    text-align: center;
+}
+
+#sect4 #div2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+#sect4 #div2 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+#sect5 {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+#sect5 img {
+    align-self: flex-start;
+    align-self: center;
+}
+
+#sect6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 550px;
+    margin-top: 50px;
+}
+
+#sect6 #div1 {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+#sect6 button {
+    border: 0;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+#sect6 button:hover {
+    cursor: pointer;
+}
+
+footer {
+    background-color: hsl(201, 11%, 96%);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+    margin-top: 120px;
+}
+
+footer #div1 > img {
+    height: 40px;
+    align-self: center;
+}
+
+footer #div1 {
+    display: flex;
+    gap: 100px;
+}
+
+footer #links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 50px;
+}
+
+footer #links a {
+    color: hsl(201, 11%, 66%);
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+footer #media {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#media a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:1125px) {
+    main {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 1042px) {
+    #sect4 {
+        width: 100%;
+    }
+
+    #sect5 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    footer {
+        padding: 30px 70px;
+    }
+}
+@media screen and (max-width:850px) {
+
+    .sect2-subdiv {
+        margin-top: -20px;
+        width: 400px;
+        align-self: center;
+    }
+
+    #sect2 #div2 {
+        flex-direction: column;
+        width: 600px;
+        gap: 50px;
+        margin-top: 40px;
+        margin-left: unset;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .sect2-subdiv > div {
+        text-align: center;
+    }
+
+    #sect1 {
+        width: 100%;
+    }
+
+    #sect2 {
+        width: 100%;
+    }
+
+    #sect2 #div1 {
+        width: 90%;
+    }
+
+    #sect2 #div2 {
+        width: 100%;
+    }
+
+    #sect3 img {
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-width: 656px) {
+    #sect3 {
+        width: 100%;
+    }
+
+    #sect3 > div {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 830px) {
+    #sect1 #button-div {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #button-div button {
+        width: 70%;
+        padding: 15px;
+    }
+
+    #sect5 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 30px;
+        padding-left: 20px;
+    }
+
+    #sect6 #button-div {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #sect6 #div1 {
+        width: 90%;
+    }
+
+    #button-div button {
+        width: 70%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    footer #links {
+        row-gap: 10px;
+        column-gap: 20px;
+    }
+}
+@media screen and (max-width: 585px) {
+    #sect4 #div2 {
+        grid-template-columns: 1fr;
+        width: 400px;
+        align-self: center;
+    }
+
+    #sect5 {
+        grid-template-columns: 1fr;
+        align-items: center;
+        padding-left: 0;
+        place-items: center;
+        row-gap: 70px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    footer #links {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 434px) {
+    .sect2-subdiv {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    #sect6 {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 490px) {
+    footer {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    footer #div1 {
+        justify-content: space-around;
+    }
+
+    footer #media {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    footer #div1 {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 416px) {
+    #sect4 #div2 {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    footer #div1 {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    footer #div1 #links {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
